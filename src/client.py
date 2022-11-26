@@ -98,7 +98,7 @@ class Client:
         the final accuracy values 
         '''
         last_model = -1
-        
+
         for i in range(elimit):
             wait = True
             while wait:
@@ -132,7 +132,7 @@ if __name__ == '__main__':
     client = Client(args.miner,args.dataset)
     print("--------------")
     print(client.id," Dataset info:")
-    Data_size, Number_of_classes = dataext.get_dataset_details(client.dataset)
+    dataext.get_dataset_details(client.dataset)
     print("--------------")
     device_id = client.id[:2]
     print(device_id,"device_id")

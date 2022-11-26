@@ -16,7 +16,7 @@ sleep 3
 for i in `seq 0 1`;
         do
                 echo "Start client $i"
-                gnome-terminal -e "python3 client.py -d \"data/federated_data_$i.d\" -e 1"
+                gnome-terminal -e "python3 client.py -d "data/federated_data_$i.d" -e 1"
         done
 
 sleep 3
